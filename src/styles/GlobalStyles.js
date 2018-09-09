@@ -6,6 +6,12 @@ const GlobalStyle = createGlobalStyle`
     margin: ${props => props.theme.body_margin};
   }
 
+  ::selection {
+    color: ${props => props.theme.body_background};
+    background: ${props => props.theme.color_primary};
+    text-shadow: none;
+  }
+
   code[class*="language-"],
   pre[class*="language-"] {
     color: black;
