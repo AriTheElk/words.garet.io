@@ -55,6 +55,15 @@ const GlobalStyle = createGlobalStyle`
     overflow: auto;
   }
 
+  code[class="language-term"] {
+    &::before {
+      position: relative;
+      content: "$";
+      left: -5px;
+      opacity: 0.5;
+    }
+  }
+
   /* Inline code */
   :not(pre) > code[class*="language-"] {
     position: relative;
