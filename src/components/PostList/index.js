@@ -11,7 +11,9 @@ const Header = ({ posts }) => (
       <Entry key={node.id}>
         <Timestamp date={node.frontmatter.date} />
         <h2>
-          <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+          <Link to={node.fields.slug.replace("/posts", "")}>
+            {node.frontmatter.title}
+          </Link>
         </h2>
         <p>{node.excerpt}</p>
       </Entry>

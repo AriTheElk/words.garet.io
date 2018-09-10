@@ -31,7 +31,7 @@ exports.createPages = ({ graphql, actions }) => {
     `).then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
-          path: node.fields.slug,
+          path: node.fields.slug.replace("/posts", ""),
           component: path.resolve(`./src/templates/singlepost.js`),
           context: {
             // Data passed to context is available
