@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: "Words, by Garet McKinley",
+    siteUrl: "https://words.garet.io",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-resolve-src",
+    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
