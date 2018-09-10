@@ -57,7 +57,7 @@ module.exports = {
             options: {
               width: "100%",
               height: 400,
-              color: "#ff00ff",
+              color: "#F688AD",
             },
           },
           {
