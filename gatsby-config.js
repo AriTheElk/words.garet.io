@@ -53,6 +53,14 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-embed-soundcloud",
+            options: {
+              width: "100%",
+              height: 400,
+              color: "#ff00ff",
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               // Class prefix for <pre> tags containing syntax highlighting;
