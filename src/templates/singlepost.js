@@ -11,7 +11,7 @@ export default ({ data }) => {
       <Post
         title={post.frontmatter.title}
         date={post.frontmatter.date}
-        html={post.html}
+        html={post.htmlAst}
       />
     </Layout>
   );
@@ -20,7 +20,7 @@ export default ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+      htmlAst
       frontmatter {
         title
         date(formatString: "DD MMMM, YYYY")

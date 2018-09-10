@@ -6,6 +6,7 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.6.4",
     "gatsby": "next",
+    "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-manifest": "next",
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "next",
@@ -20,6 +21,7 @@
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.13",
+    "rehype-react": "^3.0.3",
     "styled-components": "^4.0.0-beta.1",
     "typography": "^0.16.17",
     "typography-theme-st-annes": "^0.15.10"
