@@ -29,7 +29,7 @@ const Styled = styled.a`
   })`};
   background-size: 0em 2px, 0em 2px, 2px 2px;
   background-repeat: no-repeat, no-repeat, repeat-x;
-  background-position: 0 90%, 100% 90%, 0 90%;
+  background-position: 0 92%, 100% 90%, 0 92%;
   color: ${props => props.theme.body_color};
 `;
 
