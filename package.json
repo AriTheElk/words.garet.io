@@ -32,7 +32,6 @@
   ],
   "license": "MIT",
   "scripts": {
-    "start": "gatsby serve -p $PORT",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
