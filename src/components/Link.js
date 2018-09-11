@@ -14,9 +14,9 @@ const Styled = styled.a`
   }, 0.09em 0 ${props.theme.body_background}, -0.09em 0 ${
     props.theme.body_background
   },
-      0.12em 0 ${props.theme.body_background}, -0.12em 0 ${
+      0.14em 0 ${props.theme.body_background}, -0.14em 0 ${
     props.theme.body_background
-  }, 0.15em 0 ${props.theme.body_background}, -0.15em 0 ${
+  }, 0.15em 1px ${props.theme.body_background}, -0.15em 1px ${
     props.theme.body_background
   }`};
   ${props => `background-image: linear-gradient(${
@@ -31,6 +31,15 @@ const Styled = styled.a`
   background-repeat: no-repeat, no-repeat, repeat-x;
   background-position: 0 92%, 100% 90%, 0 92%;
   color: ${props => props.theme.body_color};
+
+  h1 &,
+  h2 &,
+  h3 &,
+  h4 &,
+  h5 &,
+  h6 & {
+    background-position: 0 88%, 100% 90%, 0 88%;
+  }
 `;
 
 const Link = ({ to, href, ...props }) => (
