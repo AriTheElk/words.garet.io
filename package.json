@@ -14,6 +14,7 @@
     "gatsby-plugin-robots-txt": "^1.3.0",
     "gatsby-plugin-sitemap": "^1.2.25",
     "gatsby-plugin-styled-components": "^3.0.0-rc.1",
+    "gatsby-plugin-twitter": "^1.0.20",
     "gatsby-plugin-typography": "^1.7.19",
     "gatsby-remark-embed-soundcloud": "^1.0.0",
     "gatsby-remark-prismjs": "^2.0.5",
