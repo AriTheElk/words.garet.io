@@ -8,8 +8,9 @@ import theme from "themes/default";
 import GlobalStyles from "styles/GlobalStyles";
 import Header from "components/Header";
 import Wrapper from "./Wrapper";
+import Avatar from "images/avatar.jpg";
 
-const Layout = ({ title, children }) => (
+const Layout = ({ title, excerpt, children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -31,6 +32,15 @@ const Layout = ({ title, children }) => (
             ]}
           >
             <html lang="en" />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:site" content="@gareteliot" />
+            <meta name="twitter:creator" content="@gareteliot" />
+            <meta
+              name="twitter:title"
+              content={title || data.site.siteMetadata.title}
+            />
+            {excerpt && <meta name="twitter:description" content={excerpt} />}
+            <meta name="twitter:image" content={Avatar} />
           </Helmet>
           <Header siteTitle={data.site.siteMetadata.title} />
           <GlobalStyles />
