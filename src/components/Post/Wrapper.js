@@ -12,6 +12,10 @@ const Post = styled.div`
   blockquote {
     border-color: ${props => props.theme.color_primary};
   }
+
+  .twitter-tweet {
+    margin: 2em auto !important;
+  }
 `;
 
 export default Post;
