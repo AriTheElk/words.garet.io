@@ -9,7 +9,7 @@ import GlobalStyles from "styles/GlobalStyles";
 import Header from "components/Header";
 import Wrapper from "./Wrapper";
 
-const Layout = ({ children }) => (
+const Layout = ({ title, children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -24,7 +24,7 @@ const Layout = ({ children }) => (
       <ThemeProvider theme={theme}>
         <Wrapper>
           <Helmet
-            title={data.site.siteMetadata.title}
+            title={title || data.site.siteMetadata.title}
             meta={[
               { name: "description", content: "Sample" },
               { name: "keywords", content: "sample, something" },

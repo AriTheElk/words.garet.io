@@ -7,7 +7,7 @@ import Post from "components/Post";
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <Layout>
+    <Layout title={post.frontmatter.title}>
       <Post
         title={post.frontmatter.title}
         date={post.frontmatter.date}
