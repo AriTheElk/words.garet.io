@@ -25,14 +25,14 @@ const underlineStyles = css`
     props.theme.body_background
   }, ${props.theme.body_background}),
   linear-gradient(${props.theme.color_primary}, ${props.theme.color_primary})`};
-  background-size: 0em 2px, 0em 2px, 2px 2px;
+  background-size: 0em 1px, 0em 1px, 1px 1px;
   background-repeat: no-repeat, no-repeat, repeat-x;
   background-position: 0 92%, 100% 90%, 0 92%;
-  color: ${props => props.theme.body_color};
 `;
 
 const Styled = styled.a`
-  ${props => !props.noUnderline && underlineStyles};
+  color: ${props => props.theme.body_color};
+  ${props => (props.noUnderline ? `` : underlineStyles)};
 
   h1 &,
   h2 &,
