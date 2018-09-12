@@ -1,7 +1,7 @@
 ---
 title: "My first Gatsby plugin: gatsby-remark-embed-soundcloud"
 date: "2018-09-10"
-category: Music
+category: Open Source
 ---
 
 I recently dove deep into the world of [GatsbyJS](https://next.gatsbyjs.org/) and have been absolutely loving every minute of it (post about that coming soon). But one of the first things I wanted to do in order to really get a feel for the engine, was to write my own plugin for it.
