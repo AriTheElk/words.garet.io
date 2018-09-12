@@ -24,12 +24,17 @@ export default {
   postlist_header_font_size_mobile: "1rem",
   postlist_body_font_size: "1rem",
   postlist_body_font_size_mobile: "0.75rem",
+  postlist_margin: "1rem",
+  postlist_margin_mobile: "0.75rem",
 
   // Post Component
   post_header_font_size: "1.5rem",
   post_header_font_size_mobile: "1.25rem",
   post_body_font_size: "1rem",
   post_body_font_size_mobile: "0.83rem",
+
+  // Badge Component
+  badge_font_size: "0.75rem",
 
   // Prism.js Theme
   prism_background: "#fff",

@@ -1,5 +1,6 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
+const slugify = require("slugify");
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
@@ -21,6 +22,9 @@ exports.createPages = ({ graphql, actions }) => {
         allMarkdownRemark {
           edges {
             node {
+              frontmatter {
+                category
+              }
               fields {
                 slug
               }
@@ -37,6 +41,17 @@ exports.createPages = ({ graphql, actions }) => {
             // Data passed to context is available
             // in page queries as GraphQL variables.
             slug: node.fields.slug,
+          },
+        });
+        createPage({
+          path: `/category/${slugify(node.frontmatter.category, {
+            lower: true,
+          })}`,
+          component: path.resolve(`./src/templates/category.js`),
+          context: {
+            // Data passed to context is available
+            // in page queries as GraphQL variables.
+            category: node.frontmatter.category,
           },
         });
       });

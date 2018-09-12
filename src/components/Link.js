@@ -1,20 +1,20 @@
 import React from "react";
 import { Link as GatsbyLink } from "gatsby";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-const Styled = styled.a`
+const underlineStyles = css`
   text-decoration: none;
   ${props => `text-shadow: 0.03em 0 ${props.theme.body_background}, -0.03em 0 ${
     props.theme.body_background
   }, 0 0.03em ${props.theme.body_background}, 0 -0.03em ${
     props.theme.body_background
   },
-      0.06em 0 ${props.theme.body_background}, -0.06em 0 ${
+  0.06em 0 ${props.theme.body_background}, -0.06em 0 ${
     props.theme.body_background
   }, 0.09em 0 ${props.theme.body_background}, -0.09em 0 ${
     props.theme.body_background
   },
-      0.14em 0 ${props.theme.body_background}, -0.14em 0 ${
+    0.14em 0 ${props.theme.body_background}, -0.14em 0 ${
     props.theme.body_background
   }, 0.15em 1px ${props.theme.body_background}, -0.15em 1px ${
     props.theme.body_background
@@ -24,13 +24,15 @@ const Styled = styled.a`
   }, ${props.theme.body_background}), linear-gradient(${
     props.theme.body_background
   }, ${props.theme.body_background}),
-    linear-gradient(${props.theme.color_primary}, ${
-    props.theme.color_primary
-  })`};
+  linear-gradient(${props.theme.color_primary}, ${props.theme.color_primary})`};
   background-size: 0em 2px, 0em 2px, 2px 2px;
   background-repeat: no-repeat, no-repeat, repeat-x;
   background-position: 0 92%, 100% 90%, 0 92%;
   color: ${props => props.theme.body_color};
+`;
+
+const Styled = styled.a`
+  ${props => !props.noUnderline && underlineStyles};
 
   h1 &,
   h2 &,

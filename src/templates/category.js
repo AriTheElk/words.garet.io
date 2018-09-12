@@ -11,8 +11,12 @@ export default ({ data }) => (
 );
 
 export const query = graphql`
-  {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+  query($category: String) {
+    allMarkdownRemark(
+      limit: 2000
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { category: { in: [$category] } } }
+    ) {
       totalCount
       edges {
         node {
