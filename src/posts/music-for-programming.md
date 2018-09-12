@@ -38,4 +38,4 @@ If you like the style of music I've recommended in this post, I created a 15-hou
 
 https://open.spotify.com/user/garetmckinley/playlist/2SmGA6PDALbMzfBwseeDNx?si=CDGId95KQHis8uYipbXLzQ
 
-Oh and one more thing! These Spotify playlists are embedded in my blog posts via my new plugin [`gatsby-remark-embed-spotify`](https://github.com/garetmckinley/gatsby-remark-embed-spotify). It allows you to paste valid Spotify share link anywhere in your markdown posts and automatically transforms them into embeds!
+Oh and one more thing! These Spotify playlists are embedded in my blog posts via my new plugin [gatsby-remark-embed-spotify](https://github.com/garetmckinley/gatsby-remark-embed-spotify). It allows you to paste valid Spotify share link anywhere in your markdown posts and automatically transforms them into embeds!
