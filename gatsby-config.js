@@ -1,3 +1,5 @@
+const theme = require("./src/themes/default");
+
 module.exports = {
   siteMetadata: {
     title: "Words, by Garet McKinley",
@@ -58,7 +60,7 @@ module.exports = {
             options: {
               width: "100%",
               height: 400,
-              color: "#F688AD",
+              color: theme.color_primary,
             },
           },
           "gatsby-remark-embed-spotify",
