@@ -1,6 +1,7 @@
-export default {
+module.exports = {
   // Global Color Definitions
-  color_primary: "#F688AD",
+  color_primary: "#BD69F6",
+  color_secondary: "#496FFF",
 
   // @media queries
   breakpoint_mobile: "550px",
