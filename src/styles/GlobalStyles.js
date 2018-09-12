@@ -5,6 +5,11 @@ const GlobalStyle = createGlobalStyle`
     background: ${props => props.theme.body_background};
     color: ${props => props.theme.body_color};
     margin: ${props => props.theme.body_margin};
+
+    @media only screen and (max-width: ${props =>
+      props.theme.breakpoint_mobile}) {
+      margin: ${props => props.theme.body_margin_mobile};
+    }
   }
 
   ::selection {

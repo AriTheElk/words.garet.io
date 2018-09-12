@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-const Entry = styled.div`
-  margin-bottom: 2em;
-`;
+const Entry = styled.div``;
 
 export default Entry;
