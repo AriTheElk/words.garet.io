@@ -17,6 +17,7 @@
     "gatsby-plugin-twitter": "^1.0.20",
     "gatsby-plugin-typography": "^1.7.19",
     "gatsby-remark-embed-soundcloud": "^1.0.0",
+    "gatsby-remark-embed-spotify": "^2.0.2",
     "gatsby-remark-prismjs": "^2.0.5",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",

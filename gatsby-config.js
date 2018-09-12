@@ -61,6 +61,7 @@ module.exports = {
               color: "#F688AD",
             },
           },
+          "gatsby-remark-embed-spotify",
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
