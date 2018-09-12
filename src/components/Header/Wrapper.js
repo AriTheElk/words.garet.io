@@ -11,6 +11,11 @@ const Wrapper = styled.div`
     width: 75px;
     margin: 0 ${props => props.theme.global_margin} 0 0;
     border-radius: 50%;
+
+    @media only screen and (max-width: ${props =>
+        props.theme.breakpoint_mobile}) {
+      display: none;
+    }
   }
 
   h1 {
