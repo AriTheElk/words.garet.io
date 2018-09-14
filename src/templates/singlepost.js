@@ -16,6 +16,7 @@ export default ({ data }) => {
         title={post.frontmatter.title}
         date={post.frontmatter.date}
         html={post.htmlAst}
+        readingTime={post.fields.readingTime.text}
       />
     </Layout>
   );
@@ -32,6 +33,9 @@ export const query = graphql`
       }
       fields {
         slug
+        readingTime {
+          text
+        }
       }
     }
   }

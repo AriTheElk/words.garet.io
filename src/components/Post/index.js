@@ -13,9 +13,9 @@ const renderAst = new rehypeReact({
   },
 }).Compiler;
 
-const Post = ({ title, date, category, html }) => (
+const Post = ({ title, date, category, html, readingTime }) => (
   <Wrapper>
-    <Meta date={date} category={category} />
+    <Meta date={date} category={category} readingTime={readingTime} />
     <h1>{title}</h1>
     {renderAst(html)}
     <Footer />
