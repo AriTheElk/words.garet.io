@@ -1,6 +1,7 @@
 ---
 title: Monitoring BitTorrent Sync with Monit on Ubuntu 14.04 LTS
 date: "2015-01-20"
+author: Garet McKinley
 category: DevOps
 ---
 

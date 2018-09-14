@@ -1,6 +1,7 @@
 ---
 title: 75% less mouse, 100% more productive —a vim story
 date: "2016-11-16"
+author: Garet McKinley
 category: Editors
 ---
 

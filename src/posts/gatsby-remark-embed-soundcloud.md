@@ -1,6 +1,7 @@
 ---
 title: "My first Gatsby plugin: gatsby-remark-embed-soundcloud"
 date: "2018-09-10"
+author: Garet McKinley
 category: Open Source
 ---
 

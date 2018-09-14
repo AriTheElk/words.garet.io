@@ -1,6 +1,7 @@
 ---
 title: A Complete Guide to Creating Your Own Private Dropbox-like Server
 date: "2013-11-12"
+author: Garet McKinley
 category: DevOps
 ---
 

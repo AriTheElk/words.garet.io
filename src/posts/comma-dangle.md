@@ -1,6 +1,7 @@
 ---
 title: Why comma-dangle is important in your open source projects
 date: "2017-02-15"
+author: Garet McKinley
 category: JavaScript
 ---
 
