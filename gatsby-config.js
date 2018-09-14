@@ -59,7 +59,7 @@ module.exports = {
             resolve: `gatsby-remark-social-cards`,
             options: {
               background: "#1b2836",
-              yMargin: 14,
+              yMargin: 20,
               title: {
                 color: "white",
               },
