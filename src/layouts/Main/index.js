@@ -40,7 +40,7 @@ const Layout = ({ title, excerpt, slug, children }) => (
                     name="twitter:image"
                     content={`${
                       data.site.siteMetadata.siteUrl
-                    }${slug}/twitter-card.jpg`}
+                    }${slug}twitter-card.jpg`}
                   />,
                 ]
               : [
