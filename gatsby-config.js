@@ -56,6 +56,19 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-social-cards`,
+            options: {
+              background: "#1b2836",
+              yMargin: 14,
+              title: {
+                color: "white",
+              },
+              meta: {
+                color: "white",
+              },
+            },
+          },
+          {
             resolve: "gatsby-remark-embed-soundcloud",
             options: {
               width: "100%",

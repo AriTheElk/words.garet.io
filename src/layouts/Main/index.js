@@ -32,7 +32,15 @@ const Layout = ({ title, excerpt, children }) => (
             ]}
           >
             <html lang="en" />
-            <meta name="twitter:card" content="summary" />
+            {title
+              ? [
+                  <meta name="twitter:card" content="summary_large_image" />,
+                  <meta name="twitter:image" content="./twitter-card.jpg" />,
+                ]
+              : [
+                  <meta name="twitter:card" content="summary" />,
+                  <meta name="twitter:image" content={Avatar} />,
+                ]}
             <meta name="twitter:site" content="@gareteliot" />
             <meta name="twitter:creator" content="@gareteliot" />
             <meta
@@ -40,7 +48,6 @@ const Layout = ({ title, excerpt, children }) => (
               content={title || data.site.siteMetadata.title}
             />
             {excerpt && <meta name="twitter:description" content={excerpt} />}
-            <meta name="twitter:image" content={Avatar} />
           </Helmet>
           <Header siteTitle={data.site.siteMetadata.title} />
           <GlobalStyles />
