@@ -5,7 +5,7 @@ const slugify = require("slugify");
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` });
+    const slug = createFilePath({ node, getNode, basePath: `posts` });
     createNodeField({
       node,
       name: `slug`,
@@ -35,7 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
     `).then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
-          path: node.fields.slug.replace("/posts", ""),
+          path: node.fields.slug,
           component: path.resolve(`./src/templates/singlepost.js`),
           context: {
             // Data passed to context is available

@@ -13,13 +13,12 @@ const Header = ({ posts }) => (
       <Entry key={node.id}>
         <Timestamp date={node.frontmatter.date} />
         <h2>
-          <Link to={node.fields.slug.replace("/posts", "")} noUnderline>
+          <Link to={node.fields.slug} noUnderline>
             {node.frontmatter.title}
           </Link>
         </h2>
         <p>
-          {node.excerpt}{" "}
-          <Link to={node.fields.slug.replace("/posts", "")}>Continue</Link>
+          {node.excerpt} <Link to={node.fields.slug}>Continue</Link>
           &rarr;
         </p>
         <Link to={categoryLink(node.frontmatter.category)} noUnderline>
