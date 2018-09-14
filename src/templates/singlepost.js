@@ -7,7 +7,11 @@ import Post from "components/Post";
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <Layout title={post.frontmatter.title} excerpt={post.excerpt}>
+    <Layout
+      title={post.frontmatter.title}
+      excerpt={post.excerpt}
+      slug={post.fields.slug}
+    >
       <Post
         title={post.frontmatter.title}
         date={post.frontmatter.date}
@@ -25,6 +29,9 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM Do, YYYY")
+      }
+      fields {
+        slug
       }
     }
   }

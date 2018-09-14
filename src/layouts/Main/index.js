@@ -10,13 +10,14 @@ import Header from "components/Header";
 import Wrapper from "./Wrapper";
 import Avatar from "images/avatar.jpg";
 
-const Layout = ({ title, excerpt, children }) => (
+const Layout = ({ title, excerpt, slug, children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
         site {
           siteMetadata {
             title
+            siteUrl
           }
         }
       }
@@ -32,10 +33,15 @@ const Layout = ({ title, excerpt, children }) => (
             ]}
           >
             <html lang="en" />
-            {title
+            {slug
               ? [
                   <meta name="twitter:card" content="summary_large_image" />,
-                  <meta name="twitter:image" content="./twitter-card.jpg" />,
+                  <meta
+                    name="twitter:image"
+                    content={`${
+                      data.site.siteMetadata.siteUrl
+                    }${slug}/twitter-card.jpg`}
+                  />,
                 ]
               : [
                   <meta name="twitter:card" content="summary" />,
