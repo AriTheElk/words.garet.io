@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
-const Wrapper = styled.time`
+const Wrapper = styled.span`
   max-width: 100%;
-  margin: 0 auto;
   margin-top: 0px;
   margin-bottom: 0px;
   text-transform: uppercase;
