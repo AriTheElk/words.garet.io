@@ -5,7 +5,7 @@ author: Garet McKinley
 tags: ["Editors"]
 ---
 
-<img alt="mouse running gif" src="http://imgur.com/vQV1W7B.gif" style="float:right"/>
+<img alt="mouse running gif" src="//imgur.com/vQV1W7B.gif" style="float:right"/>
 
 What if I told you I had a secret weapon that could make you a faster programmer… would you believe me?
 
@@ -119,7 +119,7 @@ Now let's look at doing that **exact same** operation using vim with [easymotion
 
 That's it. We're there. It took us 4 steps, none of which are time consuming at all. We were able to cut out all wrist and extreme finger motions to get exactly where we wanted to go.
 
-![](http://imgur.com/vDbriEb.gif)
+![](//imgur.com/vDbriEb.gif)
 
 At first, expect it to feel a little awkward. It always does the first time. But after you have some time to explore how it reacts to your every touch, you'll be keystroking all over this beautiful code editor.
 
@@ -131,7 +131,7 @@ Glancing away from your editor for a brief moment to find the cursor may seem li
 
 ## Build your own experience.
 
-![](http://2.bp.blogspot.com/-eY0-35xiGxg/UsAji64nNNI/AAAAAAAADfc/g3gYVMeDyyM/s1600/modular+christmas+2-TWINKLE.gif)
+![](//2.bp.blogspot.com/-eY0-35xiGxg/UsAji64nNNI/AAAAAAAADfc/g3gYVMeDyyM/s1600/modular+christmas+2-TWINKLE.gif)
 
 Out of the box, vim is a bit lackluster. If you're familiar with the vim workflow, you'll be able to get around just fine, but it's definitely not an ideal development environment for daily use. To get the most out of vim, you have to customize it for your own needs.
 

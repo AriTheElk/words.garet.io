@@ -5,7 +5,7 @@ author: Garet McKinley
 tags: ["Git"]
 ---
 
-[![](http://imgur.com/XiLqt5F.png)](https://gitmoji.carloscuesta.me/)
+[![](//imgur.com/XiLqt5F.png)](https://gitmoji.carloscuesta.me/)
 
 **tl;dr** not yet.
 
