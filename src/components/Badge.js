@@ -7,7 +7,7 @@ const Badge = styled.a`
   background: ${props => transparentize(0.75, props.theme.color_secondary)};
   color: ${props => darken(0.05, props.theme.color_secondary)};
   font-size: ${props => props.theme.badge_font_size};
-  transition: all 0.35s;
+  transition: all 0.2s;
   border-radius: 4px;
   backface-visibility: hidden;
   transform: translateZ(0);
@@ -19,7 +19,7 @@ const Badge = styled.a`
   :hover {
     transform: scale(1.05);
     box-shadow: 0 10px 15px
-      ${props => transparentize(0.9, darken(0.5, props.theme.color_secondary))};
+      ${props => transparentize(0.92, darken(0.5, props.theme.color_secondary))};
   }
 `;
 
