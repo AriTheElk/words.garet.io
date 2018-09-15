@@ -4,14 +4,17 @@ import { categoryLink } from "utils/links";
 import Wrapper from "./Wrapper";
 import Entry from "./Entry";
 import Link from "components/Link";
-import Timestamp from "components/Timestamp";
 import Badge from "components/Badge";
+import Meta from "components/Meta";
 
 const Header = ({ posts }) => (
   <Wrapper>
     {posts.map(({ node }) => (
       <Entry key={node.id}>
-        <Timestamp date={node.frontmatter.date} />
+        <Meta
+          date={node.frontmatter.date}
+          readingTime={node.fields.readingTime.text}
+        />
         <h2>
           <Link to={node.fields.slug} noUnderline>
             {node.frontmatter.title}
