@@ -2,7 +2,7 @@
 title: 75% less mouse, 100% more productive —a vim story
 date: "2016-11-16"
 author: Garet McKinley
-category: Editors
+tags: ["Editors"]
 ---
 
 <img alt="mouse running gif" src="http://imgur.com/vQV1W7B.gif" style="float:right"/>

@@ -2,7 +2,7 @@
 title: Monitoring BitTorrent Sync with Monit on Ubuntu 14.04 LTS
 date: "2015-01-20"
 author: Garet McKinley
-category: DevOps
+tags: ["DevOps", "Tutorial"]
 ---
 
 Over the past few days, I've been doing tons of DevOps work. Lots of setting up server monitoring, security, and automation. Most recently I wanted to give monit a try, as I've heard some good things about it. I was able to install it and get it up and running pretty hassle-free. I added in a few process checks for nginx, php-fpm, and postgres and it instantly was able to start tracking those processes for me.

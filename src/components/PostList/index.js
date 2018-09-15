@@ -1,11 +1,10 @@
 import React from "react";
 
-import { categoryLink } from "utils/links";
 import Wrapper from "./Wrapper";
 import Entry from "./Entry";
 import Link from "components/Link";
-import Badge from "components/Badge";
 import Meta from "components/Meta";
+import TagList from "components/TagList";
 
 const Header = ({ posts }) => (
   <Wrapper>
@@ -24,9 +23,7 @@ const Header = ({ posts }) => (
           {node.excerpt} <Link to={node.fields.slug}>Continue</Link>
           &rarr;
         </p>
-        <Link to={categoryLink(node.frontmatter.category)} noUnderline>
-          <Badge>{node.frontmatter.category}</Badge>
-        </Link>
+        <TagList tags={node.frontmatter.tags} />
       </Entry>
     ))}
   </Wrapper>

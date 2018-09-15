@@ -2,7 +2,7 @@
 title: Should you use gitmoji in your commit messages?
 date: "2016-11-28"
 author: Garet McKinley
-category: Git
+tags: ["Git"]
 ---
 
 [![](http://imgur.com/XiLqt5F.png)](https://gitmoji.carloscuesta.me/)

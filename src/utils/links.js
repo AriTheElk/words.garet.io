@@ -1,4 +1,3 @@
 import slugify from "slugify";
 
-export const categoryLink = category =>
-  `/category/${slugify(category, { lower: true })}`;
+export const tagLink = tag => `/tag/${slugify(tag, { lower: true })}`;

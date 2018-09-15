@@ -2,7 +2,7 @@
 title: Why comma-dangle is important in your open source projects
 date: "2017-02-15"
 author: Garet McKinley
-category: JavaScript
+tags: ["JavaScript", "Open Source"]
 ---
 
 Let’s talk about [comma-dangle](http://eslint.org/docs/rules/comma-dangle). More specifically, let’s talk about why you need to be using this eslint rule in your open source projects. Actually, scratch that. This is something that’s best learned through examples. Allow me to walk you through what happens when you don’t use the comma-dangle rule.

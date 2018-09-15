@@ -2,7 +2,7 @@
 title: "What do I listen to while programming?"
 date: "2018-09-12"
 author: Garet McKinley
-category: Uncategorized
+tags: ["Music"]
 ---
 
 Music is, of course, a slightly touchy and very subjective topic. Especially when discussing what to listen to while doing various tasks. Though for me personally, I have clear-cut answers to what works best for me while programming.

@@ -2,7 +2,7 @@
 title: "Let's talk about my first day with Gatsby"
 date: "2018-09-11"
 author: Garet McKinley
-category: Uncategorized
+tags: ["Gatsby", "JavaScript"]
 ---
 
 It all started with a single tweet...

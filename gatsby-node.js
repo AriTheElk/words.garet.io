@@ -1,6 +1,7 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const slugify = require("slugify");
+const _ = require("lodash");
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
@@ -23,7 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
           edges {
             node {
               frontmatter {
-                category
+                tags
               }
               fields {
                 slug
@@ -33,7 +34,8 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `).then(result => {
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      const posts = result.data.allMarkdownRemark.edges;
+      posts.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
           component: path.resolve(`./src/templates/singlepost.js`),
@@ -43,16 +45,23 @@ exports.createPages = ({ graphql, actions }) => {
             slug: node.fields.slug,
           },
         });
-        createPage({
-          path: `/category/${slugify(node.frontmatter.category, {
-            lower: true,
-          })}`,
-          component: path.resolve(`./src/templates/category.js`),
-          context: {
-            // Data passed to context is available
-            // in page queries as GraphQL variables.
-            category: node.frontmatter.category,
-          },
+
+        let tags = [];
+        _.each(posts, edge => {
+          if (_.get(edge, "node.frontmatter.tags")) {
+            tags = tags.concat(edge.node.frontmatter.tags);
+          }
+        });
+        tags = _.uniq(tags);
+
+        tags.forEach(tag => {
+          createPage({
+            path: `/tag/${_.kebabCase(tag)}/`,
+            component: path.resolve(`./src/templates/tag.js`),
+            context: {
+              tag,
+            },
+          });
         });
       });
       resolve();
