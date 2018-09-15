@@ -2,9 +2,9 @@ import React from "react";
 import rehypeReact from "rehype-react";
 
 import Wrapper from "./Wrapper";
-import Meta from "./Meta";
 import Footer from "./Footer";
 import Link from "components/Link";
+import Meta from "components/Meta";
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
