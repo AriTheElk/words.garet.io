@@ -13,7 +13,7 @@ const Header = ({ posts }) => (
       <Entry key={node.id}>
         <Meta
           date={node.frontmatter.date}
-          readingTime={node.fields.readingTime.text}
+          readingTime={node.fields.readingTime && node.fields.readingTime.text}
         />
         <h2>
           <Link to={node.fields.slug} noUnderline>
