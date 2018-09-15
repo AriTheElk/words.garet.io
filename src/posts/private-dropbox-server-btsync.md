@@ -2,7 +2,7 @@
 title: A Complete Guide to Creating Your Own Private Dropbox-like Server
 date: "2013-11-12"
 author: Garet McKinley
-tags: ["DevOps"]
+tags: ["DevOps", "Tutorial"]
 ---
 
 ## The problem: Your data isn’t safe in the cloud
