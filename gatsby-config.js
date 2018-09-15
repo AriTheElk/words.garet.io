@@ -9,6 +9,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-resolve-src",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-styled-components",
     "gatsby-plugin-twitter",
     {
       resolve: "gatsby-plugin-robots-txt",
@@ -112,11 +113,6 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {},
-    },
-
     {
       resolve: `gatsby-plugin-typography`,
       options: {
