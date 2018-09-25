@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "babel-plugin-styled-components": "^1.6.4",
+    "babel-plugin-styled-components": "^1.7.1",
     "gatsby": "next",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-manifest": "next",
