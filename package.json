@@ -15,7 +15,7 @@
     "gatsby-plugin-sitemap": "^1.2.25",
     "gatsby-plugin-styled-components": "^3.0.0-rc.1",
     "gatsby-plugin-twitter": "^2.0.5",
-    "gatsby-plugin-typography": "^1.7.19",
+    "gatsby-plugin-typography": "^2.2.0",
     "gatsby-remark-embed-soundcloud": "^1.0.0",
     "gatsby-remark-embed-spotify": "^2.0.2",
     "gatsby-remark-prismjs": "^2.0.5",

@@ -4377,13 +4377,11 @@ gatsby-plugin-twitter@^2.0.5:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-typography@^1.7.19:
-  version "1.7.19"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-typography/-/gatsby-plugin-typography-1.7.19.tgz#64a7bbb49d1ed4456dbe6b45f25a891f06a63b6d"
+gatsby-plugin-typography@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-typography/-/gatsby-plugin-typography-2.2.0.tgz#7c78cb7cd931f4ad9ad95d616588c6337b264b3d"
   dependencies:
-    babel-runtime "^6.26.0"
-    react-typography "^0.16.1"
-    typography "^0.16.0"
+    "@babel/runtime" "^7.0.0"
 
 gatsby-react-router-scroll@^2.0.0-rc.2:
   version "2.0.0-rc.2"
@@ -8007,7 +8005,7 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react-typography@^0.16.1, react-typography@^0.16.13:
+react-typography@^0.16.13:
   version "0.16.13"
   resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.16.13.tgz#94bdd2a9448823bc74d8ebf7465d86c7dbe20dcf"
 
@@ -9480,7 +9478,7 @@ typography-theme-st-annes@^0.15.10:
     gray-percentage "^2.0.0"
     typography-breakpoint-constants "^0.15.10"
 
-typography@^0.16.0, typography@^0.16.17:
+typography@^0.16.17:
   version "0.16.17"
   resolved "https://registry.yarnpkg.com/typography/-/typography-0.16.17.tgz#e166eda9b533d51c115e2b38becdb5cedd0a30e4"
   dependencies:
