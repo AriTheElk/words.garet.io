@@ -22,7 +22,7 @@
     "gatsby-remark-reading-time": "^1.0.0",
     "gatsby-remark-social-cards": "^0.4.0",
     "gatsby-source-filesystem": "^2.0.1",
-    "gatsby-transformer-remark": "^2.1.6",
+    "gatsby-transformer-remark": "^2.1.9",
     "lodash": "^4.17.11",
     "polished": "^2.2.0",
     "prismjs": "^1.15.0",
