@@ -34,7 +34,7 @@
     "slugify": "^1.3.1",
     "styled-components": "4.0.0-beta.10",
     "typography": "^0.16.17",
-    "typography-theme-st-annes": "^0.15.10"
+    "typography-theme-st-annes": "^0.16.18"
   },
   "keywords": [
     "gatsby"
