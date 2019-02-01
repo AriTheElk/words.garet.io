@@ -4432,9 +4432,9 @@ gatsby-remark-reading-time@^1.0.0:
   dependencies:
     reading-time "^1.1.3"
 
-gatsby-remark-social-cards@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-social-cards/-/gatsby-remark-social-cards-0.4.0.tgz#c70e04a69ff556fb9e5ae4dbe23e02648fc61f79"
+gatsby-remark-social-cards@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-social-cards/-/gatsby-remark-social-cards-0.4.1.tgz#69ceb1235e80fe2f2001a244a92f7aa657b71296"
   dependencies:
     dateformat "^3.0.3"
     jimp "^0.5.0"
